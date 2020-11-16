@@ -4,8 +4,6 @@
 掌握字符串String及其方法的使用  
 掌握文件的读取/写入方法  
 掌握异常处理结构  
-
-
 # 二、业务要求：
 在某课上,学生要提交实验结果，该结果存储在一个文本文件A中。  
 文件A包括两部分内容：  
@@ -30,10 +28,7 @@
 云鬓花颜金步摇，芙蓉帐暖度春宵。  
 春宵苦短日高起，从此君王不早朝。  
 …………  
-
-
 # 三、实验要求：
-
 1.设计学生类（可利用之前的）；  
 2.采用交互式方式实例化某学生；  
 3.设计程序完成上述的业务逻辑处理，并且把“古诗处理后的输出”结果存储到学生基本信息所在的文本文件A中。  
@@ -61,8 +56,6 @@
 （11） 当输入工资的时候需要判断是不是不是数字，用Scaaner对象的nextInt来获取整型，放入try中如果出现异常则抛出异常InputMismatchException，利用循环来实现知道输入正确位置。   
 （12）在dispose类中定义方法dispose接收需要处理的文本用循环来实现进行奇数的判断每判断完7个数字如果i等于0的话就是偶数，对其切片并加上逗号，再来第二个if这样判断加上句号和换行就是实现了处理文本。  
 （13）定义Student类调用input类的input放入stu对象，用sc来获取文本，赋值给filePath，再将filePath赋值给readTxt函数，并将返回值给q，将q赋值给dispose函数再赋值给k，将k和v赋值给Writer类的writer方法实现了写入，最后调用inquire类的inquier方法来计算次数。  
-
-
 # 六、核心代码：  
 一、see3测试类中的代码流程：  
 ```
@@ -109,7 +102,6 @@ z:while (true) {
                 System.out.println("输入格式错误请重新输入");
             }
         }
-
 ```
 三、阅读文本的代码：  
 ```
@@ -186,3 +178,4 @@ public static String dispose(String filePath)
 ![img1](https://github.com/ChenJian-Jia/Java_experiment_five/blob/main/img/experiment_reslut_picture_1.png)  
 ![img2](https://github.com/ChenJian-Jia/Java_experiment_five/blob/main/img/experiment_reslut_picture_2.png)  
 # 八、实验感想： 
+本次实验学习了字符处理和文件操作交互方法，此次实验对于我来说是很有难度的，本次实验基本掌握字符串String及其方法的使用，文件的读取/写入方法，异常处理结构。，主要难点在于文件的处理以及字与词的查询上，这个困扰了我好长时间，最后通过循环和indexOf方法来处理了。这次试验有用到了正则表达式，正则表达式对于我们来说至关重要不仅仅体现在文件处理上，巩固了正则表达式。这次也复习了前几个实验的重点内容，比如toString的复写，各种类型的数组。异常处理，多个类的一起操作。这是最后一次实验了，但Java之路远未结束，还有很长的路。
